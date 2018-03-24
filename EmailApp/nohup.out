@@ -1,0 +1,84 @@
+Starting a Gradle Daemon, 1 busy and 1 stopped Daemons could not be reused, use --status for details
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Access is denied
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:57)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:40)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Access is denied
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+Starting a Gradle Daemon, 2 busy and 1 stopped Daemons could not be reused, use --status for details
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Access is denied
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:57)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:40)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Access is denied
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:EmailApp:compileJavaErrors occurred while build effective model from C:\Users\cdacr\.gradle\caches\modules-2\files-2.1\javax.mail\mail\1.4.3\ad5eac91961b0097e04a7072867ace7670bfb30b\mail-1.4.3.pom:
+    'build.plugins.plugin.version' for org.codehaus.mojo:findbugs-maven-plugin must be a valid version but is 'RELEASE'. in javax.mail:mail:1.4.3
+
+:EmailApp:processResources UP-TO-DATE
+:EmailApp:classes
+:EmailApp:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-03-11 21:33:20,988 INFO  app.EmailApp : Starting EmailApp on LAPTOP-FU0E46F9 with PID 7152 (C:\Users\cdacr\Documents\GitHub\MiscApps\EmailApp\build\classes\java\main started by cdacr in C:\Users\cdacr\Documents\GitHub\MiscApps\EmailApp)
+2018-03-11 21:33:20,993 INFO  app.EmailApp : No active profile set, falling back to default profiles: default
+2018-03-11 21:33:21,053 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a94ee4: startup date [Sun Mar 11 21:33:21 AEST 2018]; root of context hierarchy
+2018-03-11 21:33:22,270 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-03-11 21:33:22,287 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-03-11 21:33:22,300 INFO  app.EmailApp : Started EmailApp in 1.899 seconds (JVM running for 2.468)
+Starting a Gradle Daemon, 3 busy and 1 stopped Daemons could not be reused, use --status for details
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Access is denied
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:57)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:40)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Access is denied
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:EmailApp:compileJavaErrors occurred while build effective model from C:\Users\cdacr\.gradle\caches\modules-2\files-2.1\javax.mail\mail\1.4.3\ad5eac91961b0097e04a7072867ace7670bfb30b\mail-1.4.3.pom:
+    'build.plugins.plugin.version' for org.codehaus.mojo:findbugs-maven-plugin must be a valid version but is 'RELEASE'. in javax.mail:mail:1.4.3
+
+:EmailApp:processResources UP-TO-DATE
+:EmailApp:classes
+:EmailApp:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-03-11 21:34:11,218 INFO  app.EmailApp : Starting EmailApp on LAPTOP-FU0E46F9 with PID 19336 (C:\Users\cdacr\Documents\GitHub\MiscApps\EmailApp\build\classes\java\main started by cdacr in C:\Users\cdacr\Documents\GitHub\MiscApps\EmailApp)
+2018-03-11 21:34:11,223 INFO  app.EmailApp : No active profile set, falling back to default profiles: default
+2018-03-11 21:34:11,292 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a94ee4: startup date [Sun Mar 11 21:34:11 AEST 2018]; root of context hierarchy
+2018-03-11 21:34:12,555 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-03-11 21:34:12,570 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-03-11 21:34:12,583 INFO  app.EmailApp : Started EmailApp in 1.979 seconds (JVM running for 2.463)
