@@ -1,17 +1,28 @@
-email:
+spring:
+  profiles:
+    active: dev
   mail:
-    smtp:
-      starttls: true
-      auth: true
+      default-encoding: UTF-8
       host: smtp.gmail.com
-      port: 587
-    credential:
       username: username@gmail.com
       password: password
-    attachmentFilePath: logs/email-app.log
-    subject: "Notification: Credential Update"
-    body: This is a test email with attachment.
-    attachmentPassword: SimplePassword
+      port: 587
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+      protocol: smtp
+      test-connection: false
+
+email:
+  from: email-apps@gmail.com
+  to: username@gmail.com
+  subject: "Notification: Test Email"
+  body: This is a test email. Please find latest file in attachment.
+  attachmentFilePath: EmailApp\email-app-script.sh
+  attachmentPassword: TestPassword
 
   emailCron: "0 30 19 * * ?"
 

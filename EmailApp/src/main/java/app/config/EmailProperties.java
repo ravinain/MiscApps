@@ -5,31 +5,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * Created by Ravi Nain on 3/10/2018.
  */
-@ConfigurationProperties(prefix = "email.mail")
+@ConfigurationProperties(prefix = "email")
 public class EmailProperties {
 
-    private Smtp smtp;
-    private Credential credential;
+    private String from;
+    private String to;
     private String attachmentFilePath;
     private String subject;
     private String body;
     private String attachmentPassword;
-
-    public Smtp getSmtp() {
-        return smtp;
-    }
-
-    public void setSmtp(Smtp smtp) {
-        this.smtp = smtp;
-    }
-
-    public Credential getCredential() {
-        return credential;
-    }
-
-    public void setCredential(Credential credential) {
-        this.credential = credential;
-    }
 
     public String getAttachmentFilePath() {
         return attachmentFilePath;
@@ -63,63 +47,19 @@ public class EmailProperties {
         this.attachmentPassword = attachmentPassword;
     }
 
-    public static class Smtp {
-        private boolean starttls;
-        private boolean auth;
-        private String host;
-        private String port;
-
-        public boolean isStarttls() {
-            return starttls;
-        }
-
-        public void setStarttls(boolean starttls) {
-            this.starttls = starttls;
-        }
-
-        public boolean isAuth() {
-            return auth;
-        }
-
-        public void setAuth(boolean auth) {
-            this.auth = auth;
-        }
-
-        public String getHost() {
-            return host;
-        }
-
-        public void setHost(String host) {
-            this.host = host;
-        }
-
-        public String getPort() {
-            return port;
-        }
-
-        public void setPort(String port) {
-            this.port = port;
-        }
+    public String getFrom() {
+        return from;
     }
 
-    public static class Credential {
-        private String userName;
-        private String password;
+    public void setFrom(String from) {
+        this.from = from;
+    }
 
-        public String getUserName() {
-            return userName;
-        }
+    public String getTo() {
+        return to;
+    }
 
-        public void setUserName(String userName) {
-            this.userName = userName;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
+    public void setTo(String to) {
+        this.to = to;
     }
 }

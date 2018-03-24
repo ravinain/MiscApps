@@ -4,3 +4,5 @@ build
 .gradle
 gradle
 .idea
+**/*-prod.yml
+**/*-dev.yml

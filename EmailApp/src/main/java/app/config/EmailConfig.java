@@ -22,36 +22,8 @@ public class EmailConfig {
     private EmailProperties emailProperties;
 
     @Bean
-    public Properties smtpProperties() {
-        EmailProperties.Smtp smtp = emailProperties.getSmtp();
-        EmailProperties.Credential credential = emailProperties.getCredential();
-
-        final Properties props = new Properties();
-        props.put("mail.smtp.starttls.enable", smtp.isStarttls());
-        props.put("mail.smtp.auth", smtp.isAuth());
-        props.put("mail.smtp.host", smtp.getHost());
-        props.put("mail.smtp.port", smtp.getPort());
-
-        return props;
-    }
-
-    @Bean
     public String tempDirectory() {
         return System.getProperty("java.io.tmpdir");
-    }
-
-    @Bean
-    public Authenticator authenticator() {
-        EmailProperties.Credential credential = emailProperties.getCredential();
-
-        return new Authenticator() {
-            @Override
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        credential.getUserName(),
-                        credential.getPassword());
-            }
-        };
     }
 
     @Bean
