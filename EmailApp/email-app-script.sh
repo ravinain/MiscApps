@@ -1,1 +1,1 @@
-nohup ../gradlew bootRun &
+nohup ../gradlew bootRun --Dspring.profiles.active=prod &

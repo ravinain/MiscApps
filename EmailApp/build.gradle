@@ -4,21 +4,16 @@ buildscript {
     dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") }
 }
 
-plugins { id "io.spring.dependency-management" version "1.0.4.RELEASE" }
-
+plugins {
+    id "io.spring.dependency-management" version "1.0.4.RELEASE"
+    id "java"
+    id "eclipse"
+}
 
 group 'com.dev.mediocre'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
@@ -30,4 +25,8 @@ dependencies {
 
 dependencyManagement {
     imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}
+
+bootRun {
+    systemProperties = System.properties
 }
