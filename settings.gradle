@@ -1,3 +1,4 @@
 rootProject.name = 'MiscApps'
 include 'EmailApp'
+include 'DuplicateFileFinder'
 

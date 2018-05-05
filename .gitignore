@@ -6,3 +6,7 @@ gradle
 .idea
 **/*-prod.yml
 **/*-dev.yml
+nohp.out
+EmailApp/nohup.out
+**/node_modules
+**/bin

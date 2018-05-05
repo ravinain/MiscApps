@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.main-div, .preview {
+    height: 100%;
+}
+
+.main-section {
+    max-height: 94%;
+}
+
+.search-section {
+    max-height: 5%;
+}
+
+.thumbnails, .file-name-list {
+    overflow-y: auto;
+}
+
+.thumbnail {
+    height: 140px;
+}
+
+.thumbnail img.img-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.file-name-list-item span {
+    float: right;
+}

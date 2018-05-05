@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Ravi Nain",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.1.0",
+    "electron": "^1.8.6",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

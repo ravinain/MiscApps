@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/duplicate_file_db
+    username: db_user_name
+    password: db_password
+    tomcat:
+      max-wait: 20000
+      max-active: 50
+      max-idle: 20
+      min-idle: 15
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        id:
+          new_generator_mappings: false
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: duplicatefilefinder.app.config.CMPhysicalNamingStrategy
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
